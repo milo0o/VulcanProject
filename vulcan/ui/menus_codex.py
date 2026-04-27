@@ -1,5 +1,95 @@
 from vulcan.ui.header import clear_screen, print_header, Color
 
+def show_prototype_deep_dive(letter):
+    """Handles the detailed sub-menus for Volume VIII Prototypes."""
+    clear_screen()
+    print_header()
+    
+    if letter == 'A':
+        print(f"{Color.MAGENTA}PROTOTYPE [A] — THE HEMP STRUCTURAL ENGINE (DEEP DIVE){Color.RESET}\n")
+        print(f"{Color.CYAN}I. Core Philosophy & Material Sovereignty{Color.RESET}")
+        print("Hemp is the biological equivalent of a Swiss Army Knife. It is a high-yield, drought-resistant,")
+        print("carbon-negative biomaterial that completely bypasses the global industrial supply chain.")
+        print("By growing the structural components of the Vulcan Gate on-site, we achieve absolute material sovereignty.\n")
+        
+        print(f"{Color.CYAN}II. Nitty-Gritty Engineering Mechanics{Color.RESET}")
+        print(f"{Color.GREEN} 1. Hempcrete Casting (Thermal Mass):{Color.RESET}")
+        print("    - Ratio: 4 parts hemp hurd (the woody core), 1 part hydrated lime binder, 1 part water.")
+        print("    - Mechanics: The lime acts as a mineralizer. As the wall cures, it pulls CO2 out of the air ")
+        print("      to turn the lime back into limestone. The wall literally turns to stone over decades.")
+        print("    - R-Value: Provides ~R-2.5 per inch while remaining fully vapor-permeable (it breathes).")
+        print(f"{Color.GREEN} 2. Bast Fiber Composites (Tensile Strength):{Color.RESET}")
+        print("    - The outer bark (bast) is stripped via mechanical decortication.")
+        print("    - When layered with organic epoxy resins, it creates bioplastics with tensile strengths ")
+        print("      rivaling fiberglass, perfect for casting chassis parts or turbine blades.")
+        print(f"{Color.GREEN} 3. Pyrolysis & Biochar (The Waste Loop):{Color.RESET}")
+        print("    - Leftover stalks/roots are loaded into an oxygen-deprived retort kiln.")
+        print("    - Baked at 400°C, the off-gassing syngas is captured for fuel, and the remaining carbon ")
+        print("      is locked into highly porous Biochar to amend depleted soil.\n")
+        
+        print(f"{Color.CYAN}III. Vulcan Gate Integration{Color.RESET}")
+        print("The Hemp Engine provides the physical acoustic housing for the excessively symmetrical Toroid.")
+        print("Because hempcrete regulates its own internal humidity and dampens vibrational resonance, it creates")
+        print("the perfect insulated isolation chamber for macroscopic quantum alignment.\n")
+
+    elif letter == 'B':
+        print(f"{Color.MAGENTA}PROTOTYPE [B] — THE ALGAE BIO-INDUSTRIAL REACTOR (DEEP DIVE){Color.RESET}\n")
+        print("[!] Detailed schematics pending. Add specific closed-loop metrics here.")
+
+    elif letter == 'C':
+        print(f"{Color.MAGENTA}PROTOTYPE [C] — THE STIRLING GRADIENT ENGINE (DEEP DIVE){Color.RESET}\n")
+        print("[!] Detailed schematics pending. Add specific thermodynamic displacement volumes here.")
+
+    elif letter == 'D':
+        print(f"{Color.MAGENTA}PROTOTYPE [D] — THE TIDAL / CURRENT TURBINE NODE (DEEP DIVE){Color.RESET}\n")
+        print("[!] Detailed schematics pending. Add hydrokinetic torque and RPM gear ratios here.")
+
+    elif letter == 'E':
+        print(f"{Color.MAGENTA}PROTOTYPE [E] — THE GEOTHERMAL LOOP ENGINE (DEEP DIVE){Color.RESET}\n")
+        print("[!] Detailed schematics pending. Add pipe-depth thresholds and refrigerant fluid types here.")
+
+    elif letter == 'F':
+        print(f"{Color.MAGENTA}PROTOTYPE [F] — THE PIEZOELECTRIC KINETIC FLOOR (DEEP DIVE){Color.RESET}\n")
+        print("[!] Detailed schematics pending. Add quartz crystal matrices and voltage rectification circuits here.")
+
+    elif letter == 'G':
+        print(f"{Color.MAGENTA}PROTOTYPE [G] — THE GRAPHENE MOTH-EYE EM HARVESTER (DEEP DIVE){Color.RESET}\n")
+        print("[!] Detailed schematics pending. Add metamaterial nanostructure geometries here.")
+
+    elif letter == 'H':
+        print(f"{Color.MAGENTA}PROTOTYPE [H] — THE SALINITY GRADIENT ENGINE (DEEP DIVE){Color.RESET}\n")
+        print("[!] Detailed schematics pending. Add semi-permeable membrane specs and osmotic pressure math here.")
+
+    elif letter == 'I':
+        print(f"{Color.MAGENTA}PROTOTYPE [I] — THE WASTE-TO-ENERGY PYROLYSIS FORGE (DEEP DIVE){Color.RESET}\n")
+        print("[!] Detailed schematics pending. Add retort kiln thermodynamics and syngas condensation loops here.")
+
+    elif letter == 'J':
+        print(f"{Color.MAGENTA}PROTOTYPE [J] — THE VERTICAL HYDROPONIC TOWER (DEEP DIVE){Color.RESET}\n")
+        print("[!] Detailed schematics pending. Add NFT channel slopes, LED spectrums, and pump frequencies here.")
+
+    elif letter == 'K':
+        print(f"{Color.MAGENTA}PROTOTYPE [K] — THE RAINWATER CAPTURE & FILTRATION NODE (DEEP DIVE){Color.RESET}\n")
+        print("[!] Detailed schematics pending. Add micron-filter stages and UV sterilization flow rates here.")
+
+    elif letter == 'L':
+        print(f"{Color.MAGENTA}PROTOTYPE [L] — THE MICROGRID CONTROL HUB (DEEP DIVE){Color.RESET}\n")
+        print("[!] Detailed schematics pending. Add inverter load-balancing logic and battery chemistry specs here.")
+
+    elif letter == 'M':
+        print(f"{Color.MAGENTA}PROTOTYPE [M] — THE SOIL REMEDIATION ENGINE (DEEP DIVE){Color.RESET}\n")
+        print("[!] Detailed schematics pending. Add heavy-metal phytoremediation species lists here.")
+
+    elif letter == 'N':
+        print(f"{Color.MAGENTA}PROTOTYPE [N] — THE CLOSED-LOOP NUTRIENT CYCLE (DEEP DIVE){Color.RESET}\n")
+        print("[!] Detailed schematics pending. Add nitrogen cycling math and vermiculture ratios here.")
+        
+    else:
+        print(f"{Color.RED}[!] ERROR: Prototype {letter} file corrupted or not found.{Color.RESET}")
+
+    input(f"\n{Color.YELLOW}Press Enter to return to the Volume VIII overview...{Color.RESET}")
+
+
 def menu_codex():
     while True:
         clear_screen()
@@ -35,6 +125,7 @@ def menu_codex():
             print(f"{Color.YELLOW}4. Reverse Lightning (Quantum Buoyancy){Color.RESET}")
             print(f"   {Color.BOLD}Formula:{Color.RESET} F_net = [ (V * rho_psi) - ((h * f) / c^2) ] * g")
             print("   Desc: Upward buoyant force when extreme electromagnetic tension compresses the vacuum.\n")
+            input(f"\n{Color.CYAN}Press Enter to return to Codex Index...{Color.RESET}")
 
         elif choice == '2':
             print(f"{Color.MAGENTA}VOLUME II: QUANTUM MECHANICS{Color.RESET}\n")
@@ -46,6 +137,7 @@ def menu_codex():
             print("   Desc: Proves true rest (0 variance) is impossible; the ether constantly vibrates.\n")
             print(f"{Color.YELLOW}4. Schrödinger Equation{Color.RESET} (H_hat * psi = E * psi)")
             print("   Desc: Maps the probability cloud of the continuous wave prior to observation.\n")
+            input(f"\n{Color.CYAN}Press Enter to return to Codex Index...{Color.RESET}")
 
         elif choice == '3':
             print(f"{Color.MAGENTA}VOLUME III: ELECTRICAL ENGINEERING{Color.RESET}\n")
@@ -55,12 +147,12 @@ def menu_codex():
             print("   Desc: Thermodynamic entropy penalty of moving energy against geometric resistance.\n")
             print(f"{Color.YELLOW}3. LC Resonant Frequency{Color.RESET} (f_res = 1 / (2 * pi * sqrt(L * C)))")
             print("   Desc: The golden ratio where magnetic inertia and electric tension perfectly balance.\n")
+            input(f"\n{Color.CYAN}Press Enter to return to Codex Index...{Color.RESET}")
 
         elif choice == '4':
             print(f"{Color.MAGENTA}VOLUME IV: FUNDAMENTAL CONSTANTS MATRIX{Color.RESET}\n")
-            # Note: Since parser is not explicitly passed to menu_codex, you'd pull this from a global or instance if needed.
-            # To maintain pure decoupling, you can pass parser as an argument to menu_codex, or hardcode the reference view.
             print(f"\n{Color.YELLOW}Note: Constants are natively loaded into the MathEvaluator.{Color.RESET}")
+            input(f"\n{Color.CYAN}Press Enter to return to Codex Index...{Color.RESET}")
 
         elif choice == '5':
             print(f"{Color.MAGENTA}VOLUME V: ADVANCED VECTOR KINETICS & TOPOLOGY{Color.RESET}\n")
@@ -96,6 +188,7 @@ def menu_codex():
             print("   superfluid space. Kinetic spin is achieved via a quantized vortex (a hole) shifting its coordinates ")
             print("   at the pi/2 limit. The resulting geometric wake forms a Skyrmion Toroid, forcing the equatorial ")
             print("   plane to constantly, orthogonally warp to chase zero-sum equilibrium.\n")
+            input(f"\n{Color.CYAN}Press Enter to return to Codex Index...{Color.RESET}")
 
         elif choice == '6':
             print(f"{Color.MAGENTA}VOLUME VI: WORKING HYPOTHESES & THEORIES{Color.RESET}\n")
@@ -161,6 +254,7 @@ def menu_codex():
             print("   tracing a circle. The i-axis component encodes the 'hidden' quadrature (etheric torsion), ")
             print("   while the real axis encodes observable motion. Vertices are defined at phase-flip events ")
             print("   (zero crossings). Geometry is not pre-given; it is generated by the continuous wave.\n")
+            input(f"\n{Color.CYAN}Press Enter to return to Codex Index...{Color.RESET}")
 
         elif choice == '7':
             print(f"{Color.MAGENTA}VOLUME VII: THE VULCAN GATE ENGINEERING (THEORETICAL){Color.RESET}\n")
@@ -186,65 +280,77 @@ def menu_codex():
             print("   pion wave. The Vulcan Gate's mechanical switch must be timed to the exact Larmor frequency to ")
             print("   intercept the rebounding wave traversing the neutral medium, siphoning the translated kinetic ")
             print("   data before it strikes the Proton core.\n")
+            input(f"\n{Color.CYAN}Press Enter to return to Codex Index...{Color.RESET}")
 
         elif choice == '8':
-            print(f"{Color.MAGENTA}VOLUME VIII: PRACTICAL PROTOTYPES (REAL-WORLD INFRASTRUCTURE){Color.RESET}\n")
-            print("These prototypes represent the physical infrastructure layer of the Vulcan Project.\n")
+            while True:
+                clear_screen()
+                print_header()
+                print(f"{Color.MAGENTA}VOLUME VIII: PRACTICAL PROTOTYPES (REAL-WORLD INFRASTRUCTURE){Color.RESET}\n")
+                print("These prototypes represent the physical infrastructure layer of the Vulcan Project.\n")
 
-            print(f"{Color.CYAN}Prototype A — The Hemp Structural Engine{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} High-yield, carbon-negative biomaterial replacing plastics, concrete, textiles.")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} Hempcrete walls, fiber composites, hurd insulation, biomass pyrolysis.")
+                print(f"{Color.CYAN}Prototype [A] — The Hemp Structural Engine{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} High-yield, carbon-negative biomaterial replacing plastics, concrete, textiles.")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} Hempcrete walls, fiber composites, hurd insulation, biomass pyrolysis.\n")
 
-            print(f"\n{Color.CYAN}Prototype B — The Algae Bio-Industrial Reactor{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} Vertical bioreactor for oils, proteins, polymers. Grows 10-20x faster.")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} Vertical tubes, nutrient cycling, bioplastics, biofuels, fertilizer.")
+                print(f"{Color.CYAN}Prototype [B] — The Algae Bio-Industrial Reactor{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} Vertical bioreactor for oils, proteins, polymers. Grows 10-20x faster.")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} Vertical tubes, nutrient cycling, bioplastics, biofuels, fertilizer.\n")
 
-            print(f"\n{Color.CYAN}Prototype C — The Stirling Gradient Engine{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} Extracts energy from any temp difference (ground/air, day/night).")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} Off-grid mechanical power, low-maintenance electricity in any climate.")
+                print(f"{Color.CYAN}Prototype [C] — The Stirling Gradient Engine{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} Extracts energy from any temp difference (ground/air, day/night).")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} Off-grid mechanical power, low-maintenance electricity in any climate.\n")
 
-            print(f"\n{Color.CYAN}Prototype D — The Tidal / Current Turbine Node{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} Hydrokinetic harvesting from rivers, tides, and ocean currents.")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} Slow-RPM/high-torque turbines, fish-safe blades, submerged microgrids.")
+                print(f"{Color.CYAN}Prototype [D] — The Tidal / Current Turbine Node{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} Hydrokinetic harvesting from rivers, tides, and ocean currents.")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} Slow-RPM/high-torque turbines, fish-safe blades, submerged microgrids.\n")
 
-            print(f"\n{Color.CYAN}Prototype E — The Geothermal Loop Engine{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} Taps stable Earth subsurface temps (~55°F) for heating/cooling.")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} Ground loops, heat pumps, Stirling-geothermal hybrid systems.")
+                print(f"{Color.CYAN}Prototype [E] — The Geothermal Loop Engine{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} Taps stable Earth subsurface temps (~55°F) for heating/cooling.")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} Ground loops, heat pumps, Stirling-geothermal hybrid systems.\n")
 
-            print(f"\n{Color.CYAN}Prototype F — The Piezoelectric Kinetic Floor{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} Pressure on piezoelectric tiles generates electricity from motion.")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} Walkways, chicken paths, gateways, barn floors.")
+                print(f"{Color.CYAN}Prototype [F] — The Piezoelectric Kinetic Floor{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} Pressure on piezoelectric tiles generates electricity from motion.")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} Walkways, chicken paths, gateways, barn floors.\n")
 
-            print(f"\n{Color.CYAN}Prototype G — The Graphene Moth-Eye EM Harvester{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} Patterned graphene absorbs ambient EM radiation across a broad spectrum.")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} EM scrubber panels, RF harvesting, waste-signal reclamation.")
+                print(f"{Color.CYAN}Prototype [G] — The Graphene Moth-Eye EM Harvester{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} Patterned graphene absorbs ambient EM radiation across a broad spectrum.")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} EM scrubber panels, RF harvesting, waste-signal reclamation.\n")
 
-            print(f"\n{Color.CYAN}Prototype H — The Salinity Gradient Engine{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} Osmotic power from freshwater and saltwater separated by a membrane.")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} Pressure-retarded osmosis (PRO), reverse electrodialysis (RED).")
+                print(f"{Color.CYAN}Prototype [H] — The Salinity Gradient Engine{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} Osmotic power from freshwater and saltwater separated by a membrane.")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} Pressure-retarded osmosis (PRO), reverse electrodialysis (RED).\n")
 
-            print(f"\n{Color.CYAN}Prototype I — The Waste-to-Energy Pyrolysis Forge{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} Thermal decomposition of organic waste without oxygen.")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} Syngas, bio-oil, and biochar production via retort kilns/gasifiers.")
+                print(f"{Color.CYAN}Prototype [I] — The Waste-to-Energy Pyrolysis Forge{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} Thermal decomposition of organic waste without oxygen.")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} Syngas, bio-oil, and biochar production via retort kilns/gasifiers.\n")
 
-            print(f"\n{Color.CYAN}Prototype J — The Vertical Hydroponic Tower{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} High-density food production yielding massive output on minimal land.")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} NFT channels, drip towers, LED-assisted growth, closed nutrient loops.")
+                print(f"{Color.CYAN}Prototype [J] — The Vertical Hydroponic Tower{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} High-density food production yielding massive output on minimal land.")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} NFT channels, drip towers, LED-assisted growth, closed nutrient loops.\n")
 
-            print(f"\n{Color.CYAN}Prototype K — The Rainwater Capture & Filtration Node{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} Water independence system: rainwater -> storage -> filtration -> potable.")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} First-flush diverters, sand/charcoal filters, UV sterilization.")
+                print(f"{Color.CYAN}Prototype [K] — The Rainwater Capture & Filtration Node{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} Water independence system: rainwater -> storage -> filtration -> potable.")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} First-flush diverters, sand/charcoal filters, UV sterilization.\n")
 
-            print(f"\n{Color.CYAN}Prototype L — The Microgrid Control Hub{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} Distributed energy management. Redundancy = resilience.")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} Integrates Solar, Stirling, Tidal, Geothermal, Piezo, and EM nodes.")
+                print(f"{Color.CYAN}Prototype [L] — The Microgrid Control Hub{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} Distributed energy management. Redundancy = resilience.")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} Integrates Solar, Stirling, Tidal, Geothermal, Piezo, and EM nodes.\n")
 
-            print(f"\n{Color.CYAN}Prototype M — The Soil Remediation Engine{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} Healing contaminated land via plants, fungi, and microbes.")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} Hemp (heavy metals), Fungi (hydrocarbons), Sunflowers (lead), Biochar.")
+                print(f"{Color.CYAN}Prototype [M] — The Soil Remediation Engine{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} Healing contaminated land via plants, fungi, and microbes.")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} Hemp (heavy metals), Fungi (hydrocarbons), Sunflowers (lead), Biochar.\n")
 
-            print(f"\n{Color.CYAN}Prototype N — The Closed-Loop Nutrient Cycle{Color.RESET}")
-            print(f"   {Color.BOLD}Core Idea:{Color.RESET} Zero-waste agriculture: waste -> compost -> soil -> plants -> food.")
-            print(f"   {Color.GREEN}Functions:{Color.RESET} Composting, vermiculture, biochar soil amendment.")
+                print(f"{Color.CYAN}Prototype [N] — The Closed-Loop Nutrient Cycle{Color.RESET}")
+                print(f"   {Color.BOLD}Core Idea:{Color.RESET} Zero-waste agriculture: waste -> compost -> soil -> plants -> food.")
+                print(f"   {Color.GREEN}Functions:{Color.RESET} Composting, vermiculture, biochar soil amendment.\n")
 
-        input(f"\n{Color.CYAN}Press Enter to return to Codex Index...{Color.RESET}")
+                sub_choice = input(f"{Color.YELLOW}>> Type a prototype's letter (A-N) to view its full details, or type 'back' to return: {Color.RESET}").strip().upper()
+                
+                if sub_choice == 'BACK' or sub_choice == '':
+                    break
+                elif sub_choice in 'ABCDEFGHIJKLMN' and len(sub_choice) == 1:
+                    show_prototype_deep_dive(sub_choice)
+                else:
+                    print(f"\n{Color.RED}[!] Invalid designation. Please enter a letter A through N, or 'back'.{Color.RESET}")
+                    import time; time.sleep(1)
